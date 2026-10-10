@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#080909">
+<meta name="description" content="Chandramowli G. — Product Manager in Identity & Access Management, PKI and Enterprise WiFi Security.">
+<title>Chandramowli G. — Product & Security</title>
+<style>
+:root{--bg:#080909;--panel:#121414;--panel2:#191c1b;--ink:#f5f5ef;--muted:#a4aaa5;--lime:#d5ff3f;--line:#303533;--serif:Georgia,'Times New Roman',serif;--sans:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.6}a{color:inherit;text-decoration:none}.wrap{width:min(1160px,calc(100% - 40px));margin:auto}
+header{height:78px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #202321}.brand{font-weight:800;letter-spacing:-.06em;font-size:22px}.brand span{color:var(--lime)}nav{display:flex;gap:27px;font-size:12px;color:#c3c8c2;letter-spacing:.08em;text-transform:uppercase}nav a:hover,.text-link:hover{color:var(--lime)}
+.hero{padding:88px 0 75px;display:grid;grid-template-columns:1.35fr .65fr;gap:55px;align-items:center;min-height:550px}.eyebrow{color:var(--lime);text-transform:uppercase;letter-spacing:.2em;font-size:11px;font-weight:750;display:flex;align-items:center;gap:10px}.eyebrow:before{content:"";height:1px;width:28px;background:var(--lime)}h1{font-size:clamp(46px,7.2vw,88px);line-height:.99;letter-spacing:-.075em;margin:22px 0 26px;font-weight:720}h1 em{font-family:var(--serif);font-weight:400;color:var(--lime)}.intro{max-width:640px;color:#b9bfba;font-size:17px;line-height:1.8}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}.btn{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:4px;padding:13px 18px;font-size:12px;font-weight:700;letter-spacing:.03em}.btn.primary{background:var(--lime);border-color:var(--lime);color:#10120b}.btn:hover{transform:translateY(-2px);transition:.2s}.profile-card{background:linear-gradient(145deg,#1a1d1c,#0f1110);border:1px solid #303532;border-radius:8px;padding:25px;position:relative;overflow:hidden;min-height:340px;display:flex;flex-direction:column;justify-content:space-between}.profile-card:before{content:"";position:absolute;width:240px;height:240px;border:1px solid #343a32;border-radius:50%;right:-70px;top:-60px;box-shadow:0 0 0 25px #141715,0 0 0 26px #30352e,0 0 0 54px #141715,0 0 0 55px #292e28}.card-top,.card-bottom{position:relative;z-index:1}.monogram{font-size:68px;line-height:1;font-weight:800;letter-spacing:-.09em;color:var(--lime)}.card-label{font-size:10px;letter-spacing:.18em;color:var(--muted);text-transform:uppercase}.card-bottom strong{display:block;font-size:18px;margin-bottom:4px}.card-bottom p{color:var(--muted);font-size:12px;margin:0}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line);border-radius:6px;margin-bottom:95px;background:#101211}.stat{padding:24px 28px;border-right:1px solid var(--line)}.stat:last-child{border:0}.stat strong{display:block;font-size:30px;letter-spacing:-.06em}.stat span{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.12em}
+section{padding:20px 0 90px;scroll-margin-top:30px}.section-head{display:flex;justify-content:space-between;gap:25px;align-items:end;margin-bottom:32px}.section-kicker{color:var(--lime);font-size:10px;letter-spacing:.2em;text-transform:uppercase}.section-head h2{font-size:clamp(32px,4vw,48px);letter-spacing:-.06em;line-height:1.1;margin:9px 0 0}.section-head p{color:var(--muted);max-width:410px;font-size:13px;margin:0}
+.about-grid{display:grid;grid-template-columns:.75fr 1.25fr;gap:18px}.feature,.about-copy,.skill-card,.timeline-item,.edu-card{background:var(--panel);border:1px solid #272c29;border-radius:6px;padding:28px}.feature{min-height:255px;display:flex;flex-direction:column;justify-content:space-between}.feature .symbol{font-size:42px;color:var(--lime)}.feature h3{font-size:23px;letter-spacing:-.04em;margin:12px 0 7px}.feature p,.about-copy p{color:var(--muted);font-size:14px;margin:0 0 14px}.about-copy p:last-child{margin-bottom:0}
+.skills{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.skill-card{min-height:175px}.skill-card .number{color:var(--lime);font-size:11px;letter-spacing:.1em}.skill-card h3{font-size:19px;letter-spacing:-.03em;margin:20px 0 8px}.skill-card p{font-size:12px;color:var(--muted);margin:0}
+.timeline{display:grid;grid-template-columns:1fr 1fr;gap:14px}.timeline-item{position:relative}.timeline-item .period{font-size:10px;color:var(--lime);letter-spacing:.12em;text-transform:uppercase}.timeline-item h3{font-size:21px;letter-spacing:-.04em;margin:8px 0 2px}.timeline-item .company{color:#e2e5df;font-size:13px}.timeline-item p{font-size:12px;color:var(--muted);margin:13px 0 0}.timeline-item.current{border-color:#66742f;background:linear-gradient(145deg,#171b13,#121414)}
+.edu-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.edu-card{display:flex;gap:18px;align-items:flex-start}.edu-icon{width:42px;height:42px;border:1px solid #3b4237;border-radius:5px;display:grid;place-items:center;color:var(--lime);flex-shrink:0}.edu-card h3{margin:0;font-size:17px;letter-spacing:-.03em}.edu-card p{margin:5px 0 0;color:var(--muted);font-size:12px}.certs{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}.chip{padding:10px 13px;border:1px solid var(--line);border-radius:4px;font-size:12px;color:#d7dcd5}.chip:before{content:"✳";color:var(--lime);margin-right:8px}
+.contact{background:var(--lime);color:#10120b;border-radius:7px;padding:42px;display:flex;justify-content:space-between;align-items:center;gap:30px}.contact .section-kicker{color:#353d1b}.contact h2{font-size:clamp(30px,4vw,48px);line-height:1.05;letter-spacing:-.06em;margin:10px 0}.contact p{margin:0;color:#3c4427;font-size:13px}.contact .btn{border-color:#10120b;color:#10120b;white-space:nowrap}.contact .btn:hover{background:#10120b;color:var(--lime)}
+footer{padding:30px 0;display:flex;justify-content:space-between;gap:15px;color:#7f8780;font-size:11px;margin-top:28px;border-top:1px solid #202321}.text-link{border-bottom:1px solid #62685f;padding-bottom:2px}
+@media(max-width:760px){.wrap{width:min(100% - 28px,600px)}header{height:auto;min-height:70px;align-items:flex-start;padding:20px 0;gap:16px;flex-direction:column}nav{gap:15px;flex-wrap:wrap;font-size:10px}.hero{padding:60px 0 45px;grid-template-columns:1fr;gap:28px}.profile-card{min-height:240px}.stats{margin-bottom:65px}.stat{padding:17px 12px}.stat strong{font-size:24px}.stat span{font-size:9px}.section-head{align-items:flex-start;flex-direction:column}.about-grid,.skills,.timeline,.edu-grid{grid-template-columns:1fr}.feature{min-height:210px}section{padding-bottom:65px}.contact{padding:28px;align-items:flex-start;flex-direction:column}footer{flex-direction:column}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+</style>
+</head>
+<body>
+<header class="wrap">
+  <a class="brand" href="#home" aria-label="Chandramowli home">C<span>.</span>G</a>
+  <nav aria-label="Main navigation"><a href="#about">About</a><a href="#expertise">Expertise</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#contact">Contact</a></nav>
+</header>
+<main>
+  <div class="wrap">
+    <section class="hero" id="home">
+      <div>
+        <div class="eyebrow">Product · Identity · Security</div>
+        <h1>Building trust<br>into <em>every</em><br>connection.</h1>
+        <p class="intro">I’m Chandramowli G., a Product Manager focused on Identity & Access Management, Public Key Infrastructure (PKI), and Enterprise WiFi Security. I bring security expertise and product strategy together to build scalable, customer-focused solutions.</p>
+        <div class="actions">
+          <a class="btn primary" href="#experience">Explore my experience <span>↘</span></a>
+          <a class="btn" href="mailto:crazy4cyber@gmail.com">Get in touch <span>↗</span></a>
+        </div>
+      </div>
+      <aside class="profile-card" aria-label="Profile card">
+        <div class="card-top"><div class="card-label">Product / Security / Strategy</div></div>
+        <div class="card-bottom"><div class="monogram">CG.</div><strong>Chandramowli G.</strong><p>Chennai, Tamil Nadu, India</p></div>
+      </aside>
+    </section>
+    <div class="stats" aria-label="Career highlights">
+      <div class="stat"><strong>20+ yrs</strong><span>Technology experience</span></div>
+      <div class="stat"><strong>12+ yrs</strong><span>At SecureW2</span></div>
+      <div class="stat"><strong>3</strong><span>Core focus areas</span></div>
+    </div>
+
+    <section id="about">
+      <div class="section-head"><div><div class="section-kicker">01 / About</div><h2>Security-minded.<br>Product-led.</h2></div><p>Connecting deep technical understanding with product direction, customer needs, and business outcomes.</p></div>
+      <div class="about-grid">
+        <div class="feature"><div class="symbol">✳</div><div><h3>From complex tech to clear value.</h3><p>Turning security challenges into dependable, scalable product experiences.</p></div></div>
+        <div class="about-copy"><p>With deep expertise in Public Key Infrastructure (PKI), Enterprise WiFi Security, and Identity & Access Management (IAM), I have spent over a decade developing and delivering secure, scalable authentication solutions for enterprise environments.</p><p>At SecureW2, I have led initiatives to develop and launch products that enhance enterprise security frameworks and improve authentication reliability and user experience. My work spans RADIUS authentication, certificate-based security, and Zero Trust implementations.</p><p>My product approach is strategic and customer-centric: align technology with business objectives, work across teams, and turn market needs into meaningful innovation.</p></div>
+      </div>
+    </section>
+
+    <section id="expertise">
+      <div class="section-head"><div><div class="section-kicker">02 / Expertise</div><h2>Where I create value.</h2></div><p>A blend of security domain knowledge, product leadership, and quality engineering.</p></div>
+      <div class="skills">
+        <article class="skill-card"><div class="number">01 — SECURITY</div><h3>PKI & Certificate Security</h3><p>Certificate-based authentication and security foundations for enterprise environments.</p></article>
+        <article class="skill-card"><div class="number">02 — ACCESS</div><h3>IAM & RADIUS</h3><p>Enterprise WiFi security, RADIUS authentication, and secure access management.</p></article>
+        <article class="skill-card"><div class="number">03 — STRATEGY</div><h3>Product Management</h3><p>Product strategy, roadmap definition, cross-functional execution, and customer-centric innovation.</p></article>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="section-head"><div><div class="section-kicker">03 / Experience</div><h2>A career built on<br>reliability.</h2></div><p>Progressing from software quality engineering into leadership and product management.</p></div>
+      <div class="timeline">
+        <article class="timeline-item current"><div class="period">April 2021 — Present</div><h3>Product Manager</h3><div class="company">SecureW2 · Chennai, India</div><p>Leading product initiatives across enterprise security, authentication, and customer experience.</p></article>
+        <article class="timeline-item"><div class="period">April 2016 — April 2021</div><h3>QA Director</h3><div class="company">SecureW2 · Greater Chennai Area</div><p>Led quality assurance leadership through a key phase of product and organizational growth.</p></article>
+        <article class="timeline-item"><div class="period">April 2014 — March 2016</div><h3>Software QA Team Lead</h3><div class="company">SecureW2</div><p>Team leadership and software quality practices.</p></article>
+        <article class="timeline-item"><div class="period">June 2007 — April 2014</div><h3>Senior Software Test Engineer</h3><div class="company">Cisco Systems</div><p>Software testing and quality engineering in an enterprise technology environment.</p></article>
+        <article class="timeline-item"><div class="period">January 2006 — June 2007</div><h3>Project Associate</h3><div class="company">Tenet Group, IIT Madras</div><p>Early-career project experience in a research and technology environment.</p></article>
+      </div>
+    </section>
+
+    <section id="education">
+      <div class="section-head"><div><div class="section-kicker">04 / Education</div><h2>Learning that compounds.</h2></div><p>Business perspective built on a foundation in computer science and engineering.</p></div>
+      <div class="edu-grid">
+        <article class="edu-card"><div class="edu-icon">MBA</div><div><h3>Master of Business Administration</h3><p>Anna University · 2020</p></div></article>
+        <article class="edu-card"><div class="edu-icon">B.Tech</div><div><h3>Computer Science & Engineering</h3><p>Pondicherry University · 2000–2004</p></div></article>
+      </div>
+      <div class="certs"><span class="chip">Product Management: Building a Product Strategy</span><span class="chip">Artificial Intelligence Micro-Certification</span></div>
+      <p style="color:var(--muted);font-size:12px;margin-top:18px">Schooling: Fatima Higher Secondary School, Pondicherry.</p>
+    </section>
+
+    <section id="contact">
+      <div class="contact"><div><div class="section-kicker">05 / Contact</div><h2>Let’s build something<br>that matters.</h2><p>For product, identity, and enterprise security conversations.</p></div><div class="actions" style="margin:0"><a class="btn" href="mailto:crazy4cyber@gmail.com">Email me ↗</a><a class="btn" href="https://www.linkedin.com/in/chandramowli-g" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></div></div>
+    </section>
+  </div>
+</main>
+<footer class="wrap"><span>© <span id="year">2026</span> Chandramowli G.</span><span>Product thinking. Secure foundations. Better experiences.</span><a class="text-link" href="#home">Back to top ↑</a></footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
